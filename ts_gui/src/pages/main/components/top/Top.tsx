@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 
 import ts_1 from "@/assets/images/logo/ts_1.png";
 import settingLines from "@/assets/icons/settings.png";
+import Dropdown from "@/pages/components/dropdown/Dropdown";
 
 type IProps = {
     userName: string;
@@ -38,6 +39,7 @@ export default function Top(props: IProps) {
                 <div className={styles.playerContainer} onClick={toggleDropdown}>
                             {dropdownVisible && (
                                 <div className={styles.dropdownContent}>
+                                    <Dropdown />
                                     <p>{t("main.components.topPlayer.playerMenu.select_1")}</p>
                                     <p>{t("main.components.topPlayer.playerMenu.select_2")}</p>
                                     <p>{t("main.components.topPlayer.playerMenu.select_3")}</p>
