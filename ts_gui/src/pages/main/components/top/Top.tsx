@@ -39,10 +39,9 @@ export default function Top(props: IProps) {
                 <div className={styles.playerContainer} onClick={toggleDropdown}>
                             {dropdownVisible && (
                                 <div className={styles.dropdownContent}>
-                                    <Dropdown />
-                                    <p>{t("main.components.topPlayer.playerMenu.select_1")}</p>
-                                    <p>{t("main.components.topPlayer.playerMenu.select_2")}</p>
-                                    <p>{t("main.components.topPlayer.playerMenu.select_3")}</p>
+                                    <button>{t("main.components.topPlayer.playerMenu.select_1")}</button>
+                                    <button>{t("main.components.topPlayer.playerMenu.select_2")}</button>
+                                    <button>{t("main.components.topPlayer.playerMenu.select_3")}</button>
                                 </div>
                             )}
                     <h1>{props.userName}</h1>
