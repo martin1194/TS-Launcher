@@ -5,8 +5,22 @@ export default function ConfirmLogout(){
         <div>
             <div>
                 <h2>確定登出?</h2>
-                    <button className="button cancel-button" onClick={onClose}>Cancel</button>
-                    <button className="button confirm-button" onClick={onConfirm}>Logout</button>
+                    <ButtonFocus
+                            content={"Sure"}
+                            themeColor="green"
+                            className={`${styles.button} ${styles.secondButton}`}
+                            onClick={() => {
+                                navigate("/Logout");
+                            }}
+                    />
+                    ButtonFocus
+                            content={"No"}
+                            themeColor="red"
+                            className={`}
+                            onClick={() => {
+                                navigate("/welcom");
+                            }}
+                    />
             </div>
         </div>
     )
